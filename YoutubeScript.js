@@ -3520,6 +3520,7 @@ function extractVideoRenderer_Video(videoRenderer, contextData) {
 		isLive = true;
 
 	if (!isLive && !videoRenderer.publishedTimeText?.simpleText) {
+		// Music videos have no dates in search results
 		videoRenderer.publishedTimeText = { simpleText: "" };
 	}
 
